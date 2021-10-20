@@ -1,0 +1,72 @@
+.featureContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+  grid-template-rows: minmax(100px, auto);
+  grid-auto-flow: dense;
+  grid-gap: 10px;
+  position: relative;
+  padding: 15px;
+  max-width: 1140px;
+  min-width: 320px;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .featureContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(50%, 1fr));
+    grid-template-rows: minmax(auto, auto);
+  }
+}
+
+.featuresBoxDiv {
+  background: #333;
+  padding: 20px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  transition: 0.5s;
+  text-align: center;
+  border-radius: 5px;
+}
+
+@media (max-width: 991px) {
+  .featuresBoxDiv {
+    grid-column: unset !important;
+    grid-row: unset !important;
+  }
+}
+
+.featuresBoxDiv:hover {
+  background: #e91e63;
+}
+
+.featuresBoxDiv:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.featuresBoxDiv:nth-child(2) {
+  grid-column: span 1;
+  grid-row: span 3;
+}
+
+.featuresBoxDiv:nth-child(4) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.featuresContentDiv {
+}
+
+.featuresImage {
+  position: relative;
+  max-width: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.featuresPara {
+  text-align: center;
+}
+
