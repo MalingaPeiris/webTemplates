@@ -49,6 +49,14 @@
 
 .landingHeadingDiv {
   width: 70%;
+  margin-left: 2%;
+}
+
+@media (max-width: 576px) {
+  .landingHeadingDiv {
+    width: 90%;
+    margin-left: 2%;
+  }
 }
 
 .landing-001Heading {
@@ -56,5 +64,15 @@
   font-weight: bold;
   font-size: 5rem;
   color: var(--bs-red);
+}
+
+@media (max-width: 576px) {
+  .landing-001Heading {
+    font-family: Lato, sans-serif;
+    font-size: 3rem;
+    color: var(--bs-red);
+    line-height: 40px;
+    font-weight: bold;
+  }
 }
 
