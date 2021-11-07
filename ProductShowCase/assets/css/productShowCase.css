@@ -1,0 +1,19 @@
+.topDiv {
+  max-width: 1920px;
+  min-width: 320px;
+  width: 100%;
+  height: 30px;
+  background: #f9f9f9;
+}
+
+.topContainer {
+  height: 30px;
+  padding: 0px;
+}
+
+.topPara {
+  height: 30px;
+  padding-top: 5px;
+  font-size: 12px;
+}
+
